@@ -1,0 +1,131 @@
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+      transition: background-color 0.3s ease;
+    }
+
+    #container {
+      border: 3px solid #007bff;
+      border-radius: 8px;
+      padding-right: 33px;
+      padding-top: 25px;
+      padding-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+
+    .theme-switch-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .theme-switch {
+      cursor: pointer;
+      font-size: 18px;
+      margin-bottom: 560px;
+      position: relative;
+      left: 180px;
+      margin-left: 10px;
+      filter: drop-shadow(1px 1px 1px black);
+      color: white !important; 
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .form-container {
+      width: 300px;
+      padding: 20px;
+      background-image: linear-gradient(180deg, white, yellow, yellow);
+      border-radius: 8px;
+      text-align: center;
+      color: black;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-container.dark-mode {
+      background-image: linear-gradient(180deg, black, rgb(0, 170, 255));
+      color: white;
+    }
+
+    .signup-fields {
+      display: none;
+    }
+
+    .flip-button {
+      cursor: pointer;
+      color: black;
+      margin-top: 15px;
+      font-weight: bold;
+      box-shadow: 3px 3px 3px black;
+      width: 70px;
+      margin-left: 110px;
+      padding: 10px;
+      border-radius: 10px;
+      transition: all 1s;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 2px 2px 2px black;
+      outline: none;
+    }
+
+    button {
+      border: none;
+      background-color: yellow;
+      font-weight: bold;
+      font-size: 14px;
+      background-color: transparent;
+    }
+    .flip-button:hover{
+        background-color:lawngreen;
+    }
+    @media (max-width: 600px) {
+      
+      #container {
+        width: 80%;
+        position: relative;
+        left: 20px;
+      }
+      .form-container{
+        width: 200px;
+        position: relative;
+        right:15px
+      }
+      .theme-switch{
+        position: relative;
+        left: 120px;
+      }
+      .flip-button{
+        position: relative;
+        right: 50px;
+      }
+    }
+  
